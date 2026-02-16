@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LinkedIn - Welcome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f3f2ef;
+      color: #000;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 15px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #0a66c2;
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 25px;
+      transition: 0.3s ease;
+    }
+
+    .join-btn {
+      color: #000;
+    }
+
+    .join-btn:hover {
+      background: #eaeaea;
+    }
+
+    .signin-btn {
+      border: 1px solid #0a66c2;
+      color: #0a66c2;
+    }
+
+    .signin-btn:hover {
+      background: rgba(10,102,194,0.1);
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 8%;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #8f5849;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .signup-btn {
+      display: inline-block;
+      background: #0a66c2;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+
+    .signup-btn:hover {
+      background: #004182;
+      transform: translateY(-2px);
+    }
+
+    .hero-image img {
+      width: 500px;
+      max-width: 100%;
+    }
+
+    footer {
+      background: #ffffff;
+      padding: 20px 8%;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 36px;
+      }
+
+      .hero-image {
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">LinkedIn</div>
+    <div class="nav-buttons">
+      <a href="#" class="join-btn">Join now</a>
+      <a href="#" class="signin-btn">Sign in</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to your professional community</h1>
+      <p>Connect with professionals, discover opportunities, and grow your career with meaningful connections.</p>
+      <a href="/signup" class="signup-btn">Sign up now</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Professional Network">
+    </div>
+  </section>
+
+  <footer>
+    © 2026 LinkedIn Clone. All rights reserved.
+  </footer>
+
+</body>
+</html>
